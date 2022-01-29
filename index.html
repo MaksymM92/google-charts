@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="module" src="js/pieChart.js" defer></script>
+    <script type="module" src="js/barChart.js" defer></script>
+    <script type="module" src="js/lineChart.js" defer></script>
+    <script type="module" src="js/map.js" defer></script>
+</head>
+<body>
+<header>
+    <span>Dashboard with google charts</span>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="chart-widget">
+                <div class="widget-header">
+                    <span>Company Performance</span>
+                </div>
+                <div class="chart">
+                    <div id="bar-chart" style="width: 45vw; height: 400px;"></div>
+                </div>
+            </div>
+            <div class="chart-widget">
+                <div class="widget-header">
+                    <span>Monthly performance for 2021 year</span>
+                </div>
+                <div class="chart">
+                    <div id="line-chart" style="width: 45vw; height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="chart-widget">
+                <div class="widget-header">
+                    <span>Most popular products</span>
+                </div>
+                <div class="chart">
+                    <div id="pie-chart" style="width: 35vw; height: 500px;"></div>
+                </div>
+            </div>
+            <div class="chart-widget">
+                <div class="widget-header">
+                    <span>Map</span>
+                </div>
+                <div class="chart">
+                    <div id="map" style="width: 55vw; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
