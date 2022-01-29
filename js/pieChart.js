@@ -1,6 +1,4 @@
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
+const drawChart = () => {
     var data = google.visualization.arrayToDataTable([
         ['Product', 'Sales'],
         ['TV',     9],
@@ -19,3 +17,6 @@ function drawChart() {
 
     chart.draw(data, options);
 }
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
