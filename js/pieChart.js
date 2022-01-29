@@ -14,6 +14,8 @@ function drawChart() {
         pieHole: 0.4,
     };
 
+    // Here we have to pass an ID ov div where we want to append a chart.
     var chart = new google.visualization.PieChart(document.getElementById('pie-chart'));
+
     chart.draw(data, options);
 }

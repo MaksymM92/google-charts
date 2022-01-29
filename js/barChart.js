@@ -7,6 +7,7 @@ const drawChart = () => {
         ['2017', 1030, 540, 350]
     ]);
 
+    // Here we have to pass an ID ov div where we want to append a chart.
     const chart = new google.charts.Bar(document.getElementById('bar-chart'));
 
     chart.draw(data);

@@ -13,6 +13,7 @@ const drawRegionsMap = () => {
         colorAxis: {colors: ['#b4dae3', 'white', '#05a4c8']},
     };
 
+    // Here we have to pass an ID ov div where we want to append a chart.
     const chart = new google.visualization.GeoChart(document.getElementById('map'));
 
     chart.draw(data, options);

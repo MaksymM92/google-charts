@@ -20,6 +20,7 @@ const drawChart = () => {
         legend: { position: 'bottom' }
     };
 
+    // Here we have to pass an ID ov div where we want to append a chart.
     const chart = new google.visualization.LineChart(document.getElementById('line-chart'));
 
     chart.draw(data, options);
